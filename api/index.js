@@ -7,7 +7,7 @@ module.exports = async function handler(req, res) {
     res.setHeader('Content-Type', 'text/html; charset=utf-8');
     return res.send(getRegisterPage());
   }
-
+ 
   // Proxy vers le site client par domaine
   const response = await fetch(
     'https://app.synthetic-architect.com/site-by-domain?domain=' + host
