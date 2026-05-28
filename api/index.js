@@ -3,8 +3,7 @@ export default async function handler(req, res) {
   const url = req.url.split('?')[0];
 
   // Page register
-  if (host === 'app.synthetic-architect.com' && url === '/register') {
-    res.setHeader('Content-Type', 'text/html; charset=utf-8');
+if (url === '/register') {    res.setHeader('Content-Type', 'text/html; charset=utf-8');
     return res.send(`<!DOCTYPE html>
 <html lang="fr">
 <head>
